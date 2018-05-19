@@ -9,7 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var startBttn: UIButton!
+    @IBOutlet weak var favBttn: UIButton!
+    @IBOutlet weak var infoBttn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
