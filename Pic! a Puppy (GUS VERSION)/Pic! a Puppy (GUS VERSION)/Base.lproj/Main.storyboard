@@ -297,7 +297,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="preFAV"/>
                                 <connections>
-                                    <action selector="displayImg:" destination="09N-Su-DvM" eventType="touchUpInside" id="PDo-lb-VvE"/>
+                                    <action selector="displayImg:" destination="09N-Su-DvM" eventType="touchUpInside" id="QBv-aC-LvB"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bmo-cu-vki">

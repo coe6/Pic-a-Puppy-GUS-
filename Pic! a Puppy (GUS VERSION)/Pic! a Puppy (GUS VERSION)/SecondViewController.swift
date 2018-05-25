@@ -8,6 +8,12 @@
 
 import UIKit
 
+struct imgProp {
+    var img: String
+    var index: Int
+    var fav: Bool
+}
+
 class SecondViewController: UIViewController {
 
     @IBOutlet weak var gusImage: UIImageView!
@@ -17,15 +23,19 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var homeBttn: UIButton!
     @IBOutlet weak var beginBttn: UIButton!
     
-    var gusImgArr = ["img1.png"]
+    var ImgArr: [imgProp] = []
+    
+    var gusImgArr = [String]()
+    var favArr = [String]()
     var indexArr = [Int(arc4random_uniform(65))]
-    var index = -1;
+    var index = 0;
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for i in 2...65 {
+        for i in 1...65 {
             gusImgArr.append("img\(i).png")
+            ImgArr.append(imgProp(img: "img\(i).png", index: (i-1), fav: false))
         }
         
         for _ in 0...64 {
@@ -39,7 +49,6 @@ class SecondViewController: UIViewController {
             
             indexArr.append(temp)
         }
-
         // Do any additional setup after loading the view.
     }
 
@@ -64,6 +73,7 @@ class SecondViewController: UIViewController {
             prevImage()
             break
         case 3:
+            favImage()
             break
         case 4:
             gusImage.isHidden = false
@@ -80,6 +90,7 @@ class SecondViewController: UIViewController {
             index -= 1
             gusImage.image = UIImage(named: gusImgArr[indexArr[index]])
         }
+        changeFavBttn()
     }
     
     func generateImage() {
@@ -90,10 +101,29 @@ class SecondViewController: UIViewController {
             index = 0
             gusImage.image = UIImage(named: gusImgArr[indexArr[index]])
         }
+       changeFavBttn()
+    }
+    
+    func changeFavBttn() {
+        if(ImgArr[indexArr[index]].fav) {
+            favBttn.setImage(#imageLiteral(resourceName: "postFAV"), for: .normal)
+        } else {
+            favBttn.setImage(#imageLiteral(resourceName: "preFAV"), for: .normal)
+        }
     }
     
     func favImage() {
+        ImgArr[indexArr[index]].fav = !ImgArr[indexArr[index]].fav
+        changeFavBttn()
         
+        if(ImgArr[indexArr[index]].fav) {
+            favArr.append(gusImgArr[indexArr[index]])
+        } else {
+            let spot = favArr.index(of: gusImgArr[indexArr[index]])
+            favArr.remove(at: spot!)
+        }
+        
+        print(favArr)
     }
 
 }
