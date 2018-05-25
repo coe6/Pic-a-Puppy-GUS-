@@ -15,6 +15,8 @@
 		22037E6520AFD208001D65A4 /* Pic__a_Puppy__GUS_VERSION_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22037E6420AFD208001D65A4 /* Pic__a_Puppy__GUS_VERSION_Tests.swift */; };
 		22037E7020AFD208001D65A4 /* Pic__a_Puppy__GUS_VERSION_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22037E6F20AFD208001D65A4 /* Pic__a_Puppy__GUS_VERSION_UITests.swift */; };
 		22037E8020AFD553001D65A4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22037E7F20AFD553001D65A4 /* SecondViewController.swift */; };
+		2235272420B7B6DE003161F1 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235272320B7B6DE003161F1 /* ThirdViewController.swift */; };
+		2235272620B7B6FE003161F1 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235272520B7B6FE003161F1 /* FourthViewController.swift */; };
 		22B1757E20B11DB90049E468 /* GusLibrary in Resources */ = {isa = PBXBuildFile; fileRef = 22B1757D20B11DB90049E468 /* GusLibrary */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		22037E6F20AFD208001D65A4 /* Pic__a_Puppy__GUS_VERSION_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic__a_Puppy__GUS_VERSION_UITests.swift; sourceTree = "<group>"; };
 		22037E7120AFD208001D65A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22037E7F20AFD553001D65A4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2235272320B7B6DE003161F1 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		2235272520B7B6FE003161F1 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		22B1757D20B11DB90049E468 /* GusLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GusLibrary; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -105,6 +109,8 @@
 				22037E4F20AFD206001D65A4 /* AppDelegate.swift */,
 				22037E5120AFD206001D65A4 /* ViewController.swift */,
 				22037E5320AFD206001D65A4 /* Main.storyboard */,
+				2235272520B7B6FE003161F1 /* FourthViewController.swift */,
+				2235272320B7B6DE003161F1 /* ThirdViewController.swift */,
 				22037E7F20AFD553001D65A4 /* SecondViewController.swift */,
 				22037E5820AFD208001D65A4 /* LaunchScreen.storyboard */,
 				22B1757D20B11DB90049E468 /* GusLibrary */,
@@ -265,7 +271,9 @@
 			files = (
 				22037E8020AFD553001D65A4 /* SecondViewController.swift in Sources */,
 				22037E5220AFD206001D65A4 /* ViewController.swift in Sources */,
+				2235272420B7B6DE003161F1 /* ThirdViewController.swift in Sources */,
 				22037E5020AFD206001D65A4 /* AppDelegate.swift in Sources */,
+				2235272620B7B6FE003161F1 /* FourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

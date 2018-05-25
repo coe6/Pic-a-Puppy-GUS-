@@ -35,7 +35,7 @@ class SecondViewController: UIViewController {
         
         for i in 1...65 {
             gusImgArr.append("img\(i).png")
-            ImgArr.append(imgProp(img: "img\(i).png", index: (i-1), fav: false))
+            ImgArr.append(imgProp(img: "img\(i).png", index: i, fav: false))
         }
         
         for _ in 0...64 {
@@ -57,6 +57,12 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! ViewController
+        vc.ImgArr = ImgArr
+        
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         gusImage.isHidden = true
         beginBttn.isHidden = false
@@ -64,6 +70,8 @@ class SecondViewController: UIViewController {
     
     @IBAction func displayImg(_ sender: Any) {
         let button =  sender as! UIButton
+        
+        print(ImgArr)
         
         switch button.tag {
         case 1:
