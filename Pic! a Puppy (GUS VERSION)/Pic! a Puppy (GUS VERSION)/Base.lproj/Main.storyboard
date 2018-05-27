@@ -271,10 +271,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="2sH-ME-v6m" appends="YES" id="519-EJ-TiU"/>
-                                    <outletCollection property="gestureRecognizers" destination="xHD-l9-pPF" appends="YES" id="cqz-MH-awP"/>
-                                    <outletCollection property="gestureRecognizers" destination="2sH-ME-v6m" appends="YES" id="40I-EV-xyB"/>
-                                    <outletCollection property="gestureRecognizers" destination="xHD-l9-pPF" appends="YES" id="C2f-dA-u2y"/>
+                                    <outletCollection property="gestureRecognizers" destination="Waa-Bj-NeQ" appends="YES" id="B5F-I4-kM7"/>
+                                    <outletCollection property="gestureRecognizers" destination="QSy-x2-zul" appends="YES" id="TDR-6x-6hb"/>
                                 </connections>
                             </imageView>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDo-EC-jZq">
@@ -316,8 +314,8 @@
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="IBZ-QW-30x"/>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="2sH-ME-v6m" appends="YES" id="sch-Gf-tlq"/>
-                            <outletCollection property="gestureRecognizers" destination="xHD-l9-pPF" appends="YES" id="4S0-wJ-RVT"/>
+                            <outletCollection property="gestureRecognizers" destination="Waa-Bj-NeQ" appends="YES" id="9GG-Hq-nNm"/>
+                            <outletCollection property="gestureRecognizers" destination="QSy-x2-zul" appends="YES" id="mgG-7R-6hC"/>
                         </connections>
                     </view>
                     <connections>
@@ -329,14 +327,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LgH-k8-fmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="2sH-ME-v6m" userLabel="Swipe Gesture Recognizer (right)">
+                <swipeGestureRecognizer direction="right" id="Waa-Bj-NeQ">
                     <connections>
-                        <action selector="swipeGest:" destination="n4X-Iu-CDp" id="yMr-WW-OP4"/>
+                        <action selector="swipeGest:" destination="n4X-Iu-CDp" id="wWC-WS-xl2"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="xHD-l9-pPF">
+                <swipeGestureRecognizer direction="left" id="QSy-x2-zul">
                     <connections>
-                        <action selector="swipeGest:" destination="n4X-Iu-CDp" id="CnY-Gn-fXO"/>
+                        <action selector="swipeGest:" destination="n4X-Iu-CDp" id="mhn-M5-zIE"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
