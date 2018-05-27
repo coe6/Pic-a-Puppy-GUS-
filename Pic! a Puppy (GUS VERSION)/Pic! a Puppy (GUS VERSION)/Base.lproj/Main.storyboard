@@ -42,6 +42,13 @@
                                     <segue destination="bXw-rH-FRc" kind="presentation" id="kWX-EU-8XB"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIP: Try swiping to change the image and double tapping to favorite the image!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOZ-6e-Wyy">
+                                <rect key="frame" x="13" y="621" width="349" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -228,7 +235,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not dog food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtX-Ds-8xo">
-                                <rect key="frame" x="122" y="376" width="78" height="17"/>
+                                <rect key="frame" x="116" y="376" width="78" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
                                 <nil key="textColor"/>
@@ -263,16 +270,13 @@
                                 <rect key="frame" x="9" y="68" width="357" height="540"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                            </imageView>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J76-Yg-Trn">
-                                <rect key="frame" x="16" y="619" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="PREV"/>
                                 <connections>
-                                    <action selector="bttnPress:" destination="n4X-Iu-CDp" eventType="touchUpInside" id="aq5-AJ-spH"/>
-                                    <action selector="displayImg:" destination="09N-Su-DvM" eventType="touchUpInside" id="6zH-8k-3rT"/>
+                                    <outletCollection property="gestureRecognizers" destination="2sH-ME-v6m" appends="YES" id="519-EJ-TiU"/>
+                                    <outletCollection property="gestureRecognizers" destination="xHD-l9-pPF" appends="YES" id="cqz-MH-awP"/>
+                                    <outletCollection property="gestureRecognizers" destination="2sH-ME-v6m" appends="YES" id="40I-EV-xyB"/>
+                                    <outletCollection property="gestureRecognizers" destination="xHD-l9-pPF" appends="YES" id="C2f-dA-u2y"/>
                                 </connections>
-                            </button>
+                            </imageView>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDo-EC-jZq">
                                 <rect key="frame" x="174" y="619" width="27" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -282,10 +286,10 @@
                                     <action selector="displayImg:" destination="09N-Su-DvM" eventType="touchUpInside" id="UUZ-ii-mS9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASc-uV-2oL">
-                                <rect key="frame" x="320" y="619" width="39" height="30"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASc-uV-2oL">
+                                <rect key="frame" x="338" y="619" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="NEXT"/>
+                                <state key="normal" image="arrowright"/>
                                 <connections>
                                     <action selector="bttnPress:" destination="n4X-Iu-CDp" eventType="touchUpInside" id="MG9-N2-0GQ"/>
                                     <action selector="displayImg:" destination="09N-Su-DvM" eventType="touchUpInside" id="lM4-Go-Nt0"/>
@@ -298,9 +302,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J76-Yg-Trn">
+                                <rect key="frame" x="9" y="619" width="28" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arrowleft"/>
+                                <connections>
+                                    <action selector="bttnPress:" destination="n4X-Iu-CDp" eventType="touchUpInside" id="aq5-AJ-spH"/>
+                                    <action selector="displayImg:" destination="09N-Su-DvM" eventType="touchUpInside" id="6zH-8k-3rT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="IBZ-QW-30x"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="2sH-ME-v6m" appends="YES" id="sch-Gf-tlq"/>
+                            <outletCollection property="gestureRecognizers" destination="xHD-l9-pPF" appends="YES" id="4S0-wJ-RVT"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="favBttn" destination="fDo-EC-jZq" id="Saw-y4-Yy9"/>
@@ -311,6 +329,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LgH-k8-fmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="2sH-ME-v6m" userLabel="Swipe Gesture Recognizer (right)">
+                    <connections>
+                        <action selector="swipeGest:" destination="n4X-Iu-CDp" id="yMr-WW-OP4"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="xHD-l9-pPF">
+                    <connections>
+                        <action selector="swipeGest:" destination="n4X-Iu-CDp" id="CnY-Gn-fXO"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="866.39999999999998" y="834.33283358320841"/>
         </scene>
@@ -322,14 +350,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZz-DP-UFJ">
-                                <rect key="frame" x="16" y="617" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="PREV"/>
-                                <connections>
-                                    <action selector="displayImg:" destination="09N-Su-DvM" eventType="touchUpInside" id="Vww-66-Vqy"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npf-sl-Acb">
                                 <rect key="frame" x="174" y="617" width="27" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -347,10 +367,10 @@
                                     <outletCollection property="gestureRecognizers" destination="B4r-g6-rvl" appends="YES" id="P8I-Wr-fpy"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPh-Ls-wRB">
-                                <rect key="frame" x="320" y="617" width="39" height="30"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPh-Ls-wRB">
+                                <rect key="frame" x="336" y="617" width="30" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="NEXT"/>
+                                <state key="normal" image="arrowright"/>
                                 <connections>
                                     <action selector="displayImg:" destination="09N-Su-DvM" eventType="touchUpInside" id="FZ9-6G-51z"/>
                                 </connections>
@@ -361,6 +381,14 @@
                                 <state key="normal" image="home-tool-bar"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="4tZ-Xb-YUl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZz-DP-UFJ">
+                                <rect key="frame" x="9" y="617" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arrowleft"/>
+                                <connections>
+                                    <action selector="displayImg:" destination="09N-Su-DvM" eventType="touchUpInside" id="Vww-66-Vqy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -396,11 +424,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrowleft" width="256" height="256"/>
+        <image name="arrowright" width="256" height="256"/>
         <image name="home-tool-bar" width="28" height="28"/>
         <image name="preFAV" width="256" height="256"/>
         <image name="profilePic" width="720" height="738"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ouf-bX-PF7"/>
+        <segue reference="cpj-hR-64h"/>
     </inferredMetricsTieBreakers>
 </document>

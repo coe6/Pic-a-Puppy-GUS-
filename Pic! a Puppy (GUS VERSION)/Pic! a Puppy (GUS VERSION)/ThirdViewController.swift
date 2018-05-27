@@ -130,6 +130,21 @@ class ThirdViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func swipeGest(_ sender: Any) {
+        let swipeGesture = sender as! UISwipeGestureRecognizer
+        
+        switch swipeGesture.direction {
+        case UISwipeGestureRecognizerDirection.right:
+            prevImg()
+            break
+        case UISwipeGestureRecognizerDirection.left:
+            generateImg()
+            break
+        default: break
+        }
+    }
+    
     @IBAction func bttnPress(_ sender: Any) {
         let button = sender as! UIButton
 
