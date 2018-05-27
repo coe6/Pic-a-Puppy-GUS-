@@ -26,7 +26,6 @@ class SecondViewController: UIViewController {
     var ImgArr: [imgProp] = []
     
     var gusImgArr = [String]()
-    var favArr = [String]()
     var indexArr = [Int]()
     var index = 0;
     
@@ -43,6 +42,7 @@ class SecondViewController: UIViewController {
             indexArr.append(nums[index])
             nums.remove(at: index)
         }
+        gusImage.image = UIImage(named: gusImgArr[indexArr[index]])
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,11 +54,6 @@ class SecondViewController: UIViewController {
         let vc = segue.destination as! ViewController
         vc.ImgArr = ImgArr
         
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        gusImage.isHidden = true
-        beginBttn.isHidden = false
     }
     
     @IBAction func swipe(_ sender: Any) {
@@ -88,11 +83,6 @@ class SecondViewController: UIViewController {
             break
         case 3:
             favImage()
-            break
-        case 4:
-            gusImage.isHidden = false
-            beginBttn.isHidden = true
-            generateImage()
             break
         default: break
         }
@@ -129,13 +119,6 @@ class SecondViewController: UIViewController {
     func favImage() {
         ImgArr[indexArr[index]].fav = !ImgArr[indexArr[index]].fav
         changeFavBttn()
-        
-        if(ImgArr[indexArr[index]].fav) {
-            favArr.append(gusImgArr[indexArr[index]])
-        } else {
-            let spot = favArr.index(of: gusImgArr[indexArr[index]])
-            favArr.remove(at: spot!)
-        }
     }
 
 }

@@ -252,17 +252,63 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJs-8u-FcQ">
-                                <rect key="frame" x="16" y="41" width="28" height="28"/>
+                                <rect key="frame" x="9" y="32" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="home-tool-bar"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="ouf-bX-PF7"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zx3-fW-1Tp">
+                                <rect key="frame" x="9" y="68" width="357" height="540"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J76-Yg-Trn">
+                                <rect key="frame" x="16" y="619" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="PREV"/>
+                                <connections>
+                                    <action selector="bttnPress:" destination="n4X-Iu-CDp" eventType="touchUpInside" id="aq5-AJ-spH"/>
+                                    <action selector="displayImg:" destination="09N-Su-DvM" eventType="touchUpInside" id="6zH-8k-3rT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDo-EC-jZq">
+                                <rect key="frame" x="174" y="619" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="preFAV"/>
+                                <connections>
+                                    <action selector="bttnPress:" destination="n4X-Iu-CDp" eventType="touchUpInside" id="zMG-PO-ffz"/>
+                                    <action selector="displayImg:" destination="09N-Su-DvM" eventType="touchUpInside" id="UUZ-ii-mS9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASc-uV-2oL">
+                                <rect key="frame" x="320" y="619" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="NEXT"/>
+                                <connections>
+                                    <action selector="bttnPress:" destination="n4X-Iu-CDp" eventType="touchUpInside" id="MG9-N2-0GQ"/>
+                                    <action selector="displayImg:" destination="09N-Su-DvM" eventType="touchUpInside" id="lM4-Go-Nt0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NO FAV IMAGES YET" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVU-CM-OhV">
+                                <rect key="frame" x="36" y="315" width="302" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IBZ-QW-30x"/>
                     </view>
+                    <connections>
+                        <outlet property="favBttn" destination="fDo-EC-jZq" id="Saw-y4-Yy9"/>
+                        <outlet property="favText" destination="bVU-CM-OhV" id="wbb-tq-Mok"/>
+                        <outlet property="gusImg" destination="Zx3-fW-1Tp" id="ISp-f7-0gr"/>
+                        <outlet property="nextBttn" destination="ASc-uV-2oL" id="rhV-BY-4Kn"/>
+                        <outlet property="prevBttn" destination="J76-Yg-Trn" id="Q7o-Em-ajY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LgH-k8-fmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -309,14 +355,6 @@
                                     <action selector="displayImg:" destination="09N-Su-DvM" eventType="touchUpInside" id="FZ9-6G-51z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohL-Mb-4Wa">
-                                <rect key="frame" x="168" y="308" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Begin"/>
-                                <connections>
-                                    <action selector="displayImg:" destination="09N-Su-DvM" eventType="touchUpInside" id="Udd-Ag-2nC"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n99-Yh-wEH">
                                 <rect key="frame" x="9" y="27" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -335,7 +373,6 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="beginBttn" destination="ohL-Mb-4Wa" id="yK0-rG-VYy"/>
                         <outlet property="favBttn" destination="Npf-sl-Acb" id="sEG-dH-j8j"/>
                         <outlet property="gusImage" destination="Bmo-cu-vki" id="6rv-Oj-P2C"/>
                         <outlet property="homeBttn" destination="n99-Yh-wEH" id="9xF-06-xze"/>
@@ -364,6 +401,6 @@
         <image name="profilePic" width="720" height="738"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4tZ-Xb-YUl"/>
+        <segue reference="ouf-bX-PF7"/>
     </inferredMetricsTieBreakers>
 </document>
