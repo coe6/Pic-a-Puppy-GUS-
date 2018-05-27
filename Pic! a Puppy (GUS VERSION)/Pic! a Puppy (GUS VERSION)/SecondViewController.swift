@@ -33,12 +33,12 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for i in 1...65 {
+        for i in 1...66 {
             gusImgArr.append("img\(i).png")
             ImgArr.append(imgProp(img: "img\(i).png", index: i, fav: false))
         }
         
-        for _ in 0...64 {
+        for _ in 0...65 {
             var temp = Int(arc4random_uniform(65))
             
             for i in 0...indexArr.count-1 {
@@ -46,10 +46,8 @@ class SecondViewController: UIViewController {
                     temp = Int(arc4random_uniform(65))
                 }
             }
-            
             indexArr.append(temp)
         }
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,10 +66,23 @@ class SecondViewController: UIViewController {
         beginBttn.isHidden = false
     }
     
+    @IBAction func swipe(_ sender: Any) {
+        let swipeGesture = sender as! UISwipeGestureRecognizer
+        
+        switch swipeGesture.direction {
+        case UISwipeGestureRecognizerDirection.right:
+            prevImage()
+            break
+        case UISwipeGestureRecognizerDirection.left:
+            generateImage()
+            break
+        default: break
+        }
+    }
+    
+    
     @IBAction func displayImg(_ sender: Any) {
         let button =  sender as! UIButton
-        
-        print(ImgArr)
         
         switch button.tag {
         case 1:

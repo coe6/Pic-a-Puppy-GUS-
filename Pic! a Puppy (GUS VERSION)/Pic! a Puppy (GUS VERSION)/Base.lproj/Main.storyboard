@@ -300,9 +300,14 @@
                                     <action selector="displayImg:" destination="09N-Su-DvM" eventType="touchUpInside" id="QBv-aC-LvB"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bmo-cu-vki">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bmo-cu-vki">
                                 <rect key="frame" x="20" y="83" width="339" height="481"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="BFd-un-1LK" appends="YES" id="s4g-hb-plh"/>
+                                    <outletCollection property="gestureRecognizers" destination="B4r-g6-rvl" appends="YES" id="P8I-Wr-fpy"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPh-Ls-wRB">
                                 <rect key="frame" x="317" y="601" width="39" height="30"/>
@@ -322,7 +327,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="gnD-p4-OtD"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="BFd-un-1LK" appends="YES" id="Ygv-nd-TMM"/>
+                            <outletCollection property="gestureRecognizers" destination="B4r-g6-rvl" appends="YES" id="gN2-jw-xeL"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="beginBttn" destination="ohL-Mb-4Wa" id="yK0-rG-VYy"/>
@@ -334,6 +344,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="if1-bW-x2X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="BFd-un-1LK" userLabel="Swipe Gesture Recognizer (right)">
+                    <connections>
+                        <action selector="swipe:" destination="09N-Su-DvM" id="qpb-XM-gzt"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="B4r-g6-rvl">
+                    <connections>
+                        <action selector="swipe:" destination="09N-Su-DvM" id="3uL-d5-Vai"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="813.60000000000002" y="106.59670164917542"/>
         </scene>
@@ -344,6 +364,6 @@
         <image name="profilePic" width="720" height="738"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ouf-bX-PF7"/>
+        <segue reference="4tZ-Xb-YUl"/>
     </inferredMetricsTieBreakers>
 </document>
