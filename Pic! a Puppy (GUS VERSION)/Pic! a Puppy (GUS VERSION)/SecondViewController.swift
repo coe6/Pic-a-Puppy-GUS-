@@ -100,19 +100,26 @@ class SecondViewController: UIViewController {
     func prevImage() {
         if(index != 0) {
             index -= 1
-            gusImage.image = UIImage(named: gusImgArr[indexArr[index]])
         }
+        
+        UIView.transition(with: gusImage, duration: 0.2, options: .transitionCurlDown, animations: {
+            self.gusImage.image = UIImage(named: self.gusImgArr[self.indexArr[self.index]])
+        }, completion: nil)
+        
         changeFavBttn()
     }
     
     func generateImage() {
         if(index < 65) {
             index += 1
-            gusImage.image = UIImage(named: gusImgArr[indexArr[index]])
         } else {
             index = 0
-            gusImage.image = UIImage(named: gusImgArr[indexArr[index]])
         }
+        
+        UIView.transition(with: gusImage, duration: 0.2, options: .transitionCurlUp, animations: {
+            self.gusImage.image = UIImage(named: self.gusImgArr[self.indexArr[self.index]])
+        }, completion: nil)
+        
        changeFavBttn()
     }
     

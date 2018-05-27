@@ -88,11 +88,19 @@ class ThirdViewController: UIViewController {
     func generateImg() {
         if(index < gusImgFav.count-1) {
             index += 1
-            gusImg.image = UIImage(named: gusImgFav[index])
+            
+            UIView.transition(with: gusImg, duration: 0.2, options: .transitionCurlUp, animations: {
+                self.gusImg.image = UIImage(named: self.gusImgFav[self.index])
+            }, completion: nil)
+            
         } else {
             index = 0
             if(gusImgFav.count > 0) {
-                gusImg.image = UIImage(named: gusImgFav[index])
+                
+                UIView.transition(with: gusImg, duration: 0.2, options: .transitionCurlUp, animations: {
+                    self.gusImg.image = UIImage(named: self.gusImgFav[self.index])
+                }, completion: nil)
+                
             } else {
                 favText.isHidden = false
                 gusImg.isHidden = true
@@ -106,12 +114,14 @@ class ThirdViewController: UIViewController {
     func prevImg() {
         if(index != 0) {
             index -= 1
-            gusImg.image = UIImage(named: gusImgFav[index])
         } else {
             index = gusImgFav.count-1
-            gusImg.image = UIImage(named: gusImgFav[index])
-
         }
+        
+        UIView.transition(with: gusImg, duration: 0.2, options: .transitionCurlDown, animations: {
+            self.gusImg.image = UIImage(named: self.gusImgFav[self.index])
+        }, completion: nil)
+        
         changeFavBttn()
     }
 
