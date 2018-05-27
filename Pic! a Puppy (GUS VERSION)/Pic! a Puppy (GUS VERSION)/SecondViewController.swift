@@ -43,6 +43,14 @@ class SecondViewController: UIViewController {
             nums.remove(at: index)
         }
         gusImage.image = UIImage(named: gusImgArr[indexArr[index]])
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(doubleTapped))
+        tap.numberOfTapsRequired = 2
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func doubleTapped() {
+        favImage()
     }
 
     override func didReceiveMemoryWarning() {

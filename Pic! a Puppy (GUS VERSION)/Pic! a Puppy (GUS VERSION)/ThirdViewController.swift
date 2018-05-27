@@ -45,6 +45,14 @@ class ThirdViewController: UIViewController {
             favText.isHidden = false
             disableBttn()
         }
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(doubleTapped))
+        tap.numberOfTapsRequired = 2
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func doubleTapped() {
+        favImg()
     }
 
     override func didReceiveMemoryWarning() {
