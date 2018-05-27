@@ -277,23 +277,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZz-DP-UFJ">
-                                <rect key="frame" x="20" y="598" width="38" height="30"/>
+                                <rect key="frame" x="16" y="617" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="PREV"/>
                                 <connections>
                                     <action selector="displayImg:" destination="09N-Su-DvM" eventType="touchUpInside" id="Vww-66-Vqy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n99-Yh-wEH">
-                                <rect key="frame" x="20" y="33" width="28" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="home-tool-bar"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="4tZ-Xb-YUl"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npf-sl-Acb">
-                                <rect key="frame" x="174" y="601" width="27" height="27"/>
+                                <rect key="frame" x="174" y="617" width="27" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="preFAV"/>
                                 <connections>
@@ -301,7 +293,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bmo-cu-vki">
-                                <rect key="frame" x="20" y="83" width="339" height="481"/>
+                                <rect key="frame" x="9" y="69" width="357" height="540"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -310,7 +302,7 @@
                                 </connections>
                             </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPh-Ls-wRB">
-                                <rect key="frame" x="317" y="601" width="39" height="30"/>
+                                <rect key="frame" x="320" y="617" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="NEXT"/>
                                 <connections>
@@ -323,6 +315,14 @@
                                 <state key="normal" title="Begin"/>
                                 <connections>
                                     <action selector="displayImg:" destination="09N-Su-DvM" eventType="touchUpInside" id="Udd-Ag-2nC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n99-Yh-wEH">
+                                <rect key="frame" x="9" y="27" width="28" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="home-tool-bar"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="4tZ-Xb-YUl"/>
                                 </connections>
                             </button>
                         </subviews>
