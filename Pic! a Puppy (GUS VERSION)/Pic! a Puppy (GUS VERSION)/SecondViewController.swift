@@ -12,6 +12,12 @@ struct imgProp {
     var img: String
     var index: Int
     var fav: Bool
+    
+    init(img: String, index: Int, fav: Bool) {
+        self.img = img
+        self.index = index
+        self.fav = fav
+    }
 }
 
 class SecondViewController: UIViewController {

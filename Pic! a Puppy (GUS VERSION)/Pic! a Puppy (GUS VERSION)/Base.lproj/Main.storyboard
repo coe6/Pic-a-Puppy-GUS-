@@ -259,7 +259,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJs-8u-FcQ">
-                                <rect key="frame" x="9" y="32" width="28" height="28"/>
+                                <rect key="frame" x="9" y="32" width="21" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="home-tool-bar"/>
                                 <connections>
@@ -267,7 +267,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zx3-fW-1Tp">
-                                <rect key="frame" x="9" y="68" width="357" height="540"/>
+                                <rect key="frame" x="9" y="58" width="357" height="564"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -276,7 +276,7 @@
                                 </connections>
                             </imageView>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDo-EC-jZq">
-                                <rect key="frame" x="174" y="619" width="27" height="27"/>
+                                <rect key="frame" x="174" y="630" width="27" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="preFAV"/>
                                 <connections>
@@ -285,7 +285,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASc-uV-2oL">
-                                <rect key="frame" x="338" y="619" width="28" height="28"/>
+                                <rect key="frame" x="338" y="630" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrowright"/>
                                 <connections>
@@ -301,7 +301,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J76-Yg-Trn">
-                                <rect key="frame" x="9" y="619" width="28" height="28"/>
+                                <rect key="frame" x="9" y="630" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrowleft"/>
                                 <connections>
@@ -349,7 +349,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npf-sl-Acb">
-                                <rect key="frame" x="174" y="617" width="27" height="27"/>
+                                <rect key="frame" x="174" y="630" width="27" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="preFAV"/>
                                 <connections>
@@ -357,7 +357,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bmo-cu-vki">
-                                <rect key="frame" x="9" y="69" width="357" height="540"/>
+                                <rect key="frame" x="9" y="55" width="357" height="567"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -366,7 +366,7 @@
                                 </connections>
                             </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPh-Ls-wRB">
-                                <rect key="frame" x="336" y="617" width="30" height="27"/>
+                                <rect key="frame" x="336" y="630" width="30" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrowright"/>
                                 <connections>
@@ -374,7 +374,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n99-Yh-wEH">
-                                <rect key="frame" x="9" y="27" width="28" height="28"/>
+                                <rect key="frame" x="9" y="27" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="home-tool-bar"/>
                                 <connections>
@@ -382,7 +382,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZz-DP-UFJ">
-                                <rect key="frame" x="9" y="617" width="27" height="27"/>
+                                <rect key="frame" x="9" y="630" width="27" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrowleft"/>
                                 <connections>
@@ -429,6 +429,6 @@
         <image name="profilePic" width="720" height="738"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ouf-bX-PF7"/>
+        <segue reference="4tZ-Xb-YUl"/>
     </inferredMetricsTieBreakers>
 </document>
